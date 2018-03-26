@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8AF1822066CF9C00E8A94C /* redis-cache.c in Sources */ = {isa = PBXBuildFile; fileRef = BF8AF1812066CF9C00E8A94C /* redis-cache.c */; };
+		BF91D2E7206672FA00B2AF3F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BF91D2E6206672FA00B2AF3F /* main.c */; };
+		BF91D2F2206684E200B2AF3F /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = BF91D2F0206684E200B2AF3F /* server.c */; };
+		BF91D2F620668AA100B2AF3F /* DB.c in Sources */ = {isa = PBXBuildFile; fileRef = BF91D2F420668AA100B2AF3F /* DB.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF91D2E1206672FA00B2AF3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF8AF1802066CF8700E8A94C /* redis-cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redis-cache.h"; sourceTree = "<group>"; };
+		BF8AF1812066CF9C00E8A94C /* redis-cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "redis-cache.c"; sourceTree = "<group>"; };
+		BF91D2E3206672FA00B2AF3F /* WebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF91D2E6206672FA00B2AF3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BF91D2EE2066733700B2AF3F /* ReqRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqRes.h; sourceTree = "<group>"; };
+		BF91D2F0206684E200B2AF3F /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		BF91D2F1206684E200B2AF3F /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		BF91D2F420668AA100B2AF3F /* DB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DB.c; sourceTree = "<group>"; };
+		BF91D2F520668AA100B2AF3F /* DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF91D2E0206672FA00B2AF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF91D2DA206672F900B2AF3F = {
+			isa = PBXGroup;
+			children = (
+				BF91D2E5206672FA00B2AF3F /* WebServer */,
+				BF91D2E4206672FA00B2AF3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF91D2E4206672FA00B2AF3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF91D2E3206672FA00B2AF3F /* WebServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF91D2E5206672FA00B2AF3F /* WebServer */ = {
+			isa = PBXGroup;
+			children = (
+				BF91D2F320668A7A00B2AF3F /* persistence */,
+				BF91D2EF206673AE00B2AF3F /* network */,
+				BF91D2ED2066731300B2AF3F /* model */,
+				BF91D2E6206672FA00B2AF3F /* main.c */,
+			);
+			path = WebServer;
+			sourceTree = "<group>";
+		};
+		BF91D2ED2066731300B2AF3F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BF91D2EE2066733700B2AF3F /* ReqRes.h */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		BF91D2EF206673AE00B2AF3F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				BF91D2F0206684E200B2AF3F /* server.c */,
+				BF91D2F1206684E200B2AF3F /* server.h */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		BF91D2F320668A7A00B2AF3F /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BF91D2F420668AA100B2AF3F /* DB.c */,
+				BF91D2F520668AA100B2AF3F /* DB.h */,
+				BF8AF1802066CF8700E8A94C /* redis-cache.h */,
+				BF8AF1812066CF9C00E8A94C /* redis-cache.c */,
+			);
+			name = persistence;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF91D2E2206672FA00B2AF3F /* WebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF91D2EA206672FA00B2AF3F /* Build configuration list for PBXNativeTarget "WebServer" */;
+			buildPhases = (
+				BF91D2DF206672FA00B2AF3F /* Sources */,
+				BF91D2E0206672FA00B2AF3F /* Frameworks */,
+				BF91D2E1206672FA00B2AF3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebServer;
+			productName = WebServer;
+			productReference = BF91D2E3206672FA00B2AF3F /* WebServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF91D2DB206672F900B2AF3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.bchennu;
+				TargetAttributes = {
+					BF91D2E2206672FA00B2AF3F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BF91D2DE206672F900B2AF3F /* Build configuration list for PBXProject "WebServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF91D2DA206672F900B2AF3F;
+			productRefGroup = BF91D2E4206672FA00B2AF3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF91D2E2206672FA00B2AF3F /* WebServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF91D2DF206672FA00B2AF3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF91D2F620668AA100B2AF3F /* DB.c in Sources */,
+				BF91D2F2206684E200B2AF3F /* server.c in Sources */,
+				BF8AF1822066CF9C00E8A94C /* redis-cache.c in Sources */,
+				BF91D2E7206672FA00B2AF3F /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF91D2E8206672FA00B2AF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF91D2E9206672FA00B2AF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BF91D2EB206672FA00B2AF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/hiredis/0.13.3/include/hiredis,
+					/usr/local/include,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lhiredis",
+					"-lpq",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF91D2EC206672FA00B2AF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF91D2DE206672F900B2AF3F /* Build configuration list for PBXProject "WebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF91D2E8206672FA00B2AF3F /* Debug */,
+				BF91D2E9206672FA00B2AF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF91D2EA206672FA00B2AF3F /* Build configuration list for PBXNativeTarget "WebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF91D2EB206672FA00B2AF3F /* Debug */,
+				BF91D2EC206672FA00B2AF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF91D2DB206672F900B2AF3F /* Project object */;
+}
